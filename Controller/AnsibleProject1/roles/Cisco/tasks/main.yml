@@ -19,19 +19,8 @@
   delegate_to: localhost
   run_once: true
 
-- name: See containt
-  debug:
-    msg: "{{ hc_results }}"
-
 - name: Save formatted health check output to a local file
   ansible.builtin.copy:
-    content: |
-      {% for item in hc_results.results -%}
-      #################################################################
-      ### COMMAND: {{ item.item }}
-      #################################################################
-      {{ item.stdout | default('No output') }}
-
-      {% endfor %}
+    content: "{{ hc_results.stdout }}"
     dest: "{{ playbook_dir }}/tmp/logs/{{ inventory_hostname }}_health_check_{{ log_timestamp }}.log"
   delegate_to: localhost

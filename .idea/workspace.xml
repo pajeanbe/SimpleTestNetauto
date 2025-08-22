@@ -26,11 +26,7 @@
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/utils.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/we" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/weatherquery.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/ansible.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/ansible.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/site.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/site.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Cisco/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Cisco/tasks/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Cisco/templates/Cisco_Equipement_HC.j2" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Cisco/templates/Cisco_Equipement_HC.j2" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +99,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1755832147875</updated>
-      <workItem from="1755832149282" duration="21980000" />
+      <workItem from="1755832149282" duration="22508000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -201,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755886158382</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="test">
+      <option name="closed" value="true" />
+      <created>1755887898099</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1755887898099</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
