@@ -14,8 +14,7 @@
 
 - name: debug msg
   debug:
-    msg: "{{ hc_results.stdout }}"
-  run_once: true
+    msg: "{{ hc_results }}"
 
 
 - name: Ensure log directory exists on the Ansible controller
