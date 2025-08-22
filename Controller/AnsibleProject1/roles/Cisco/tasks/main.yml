@@ -19,6 +19,10 @@
   delegate_to: localhost
   run_once: true
 
+- name: See containt
+  debug:
+    msg: "{{ hc_results }}"
+
 - name: Save formatted health check output to a local file
   ansible.builtin.copy:
     content: |
