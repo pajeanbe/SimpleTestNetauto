@@ -7,29 +7,31 @@ show clock
 show logging
 show ip interface brief
 show interfaces description
-show interfaces counters errors
 show processes cpu sorted
 show memory summary
 show ip arp
 show cdp neighbors detail
 show lldp neighbors detail
-show running-config | include hostname
+show running-config
 
+{% if 'Cisco_routers' in group_names %}
 !# =================================================
 !# Router-Specific Commands
 !# =================================================
-{% if device_type == 'router' %}
+!# =================================================
 show ip route summary
 show ip route
 {% endif %}
 
+
+{% if 'Cisco_switch' in group_names %}
 !# =================================================
 !# Switch-Specific Commands
 !# =================================================
-{% elif device_type == 'switch' %}
 show vlan brief
 show spanning-tree summary
 show mac address-table count
 show interfaces status
 show power inline
+show interfaces counters errors
 {% endif %}

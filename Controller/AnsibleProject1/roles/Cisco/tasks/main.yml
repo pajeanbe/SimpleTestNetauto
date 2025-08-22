@@ -2,8 +2,10 @@
 - name: Set timestamp for log files
   ansible.builtin.set_fact:
     log_timestamp: "{{ lookup('pipe', 'date +%Y%m%d_%H%M%S') }}"
-  run_once: true
+    # Using ansible.builtin.now() filter is more portable and Ansible-native
+    # log_timestamp: "{{ ansible.builtin.now().strftime('%Y%m%d_%H%M%S') }}"
   delegate_to: localhost
+  run_once: true # Ensure this task runs only once on the control node
 
 - name: Run health check commands from script
   cisco.ios.ios_command:
