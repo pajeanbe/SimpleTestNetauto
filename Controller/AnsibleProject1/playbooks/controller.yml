@@ -1,0 +1,4 @@
+---
+- import_playbook:
+    - test_connection_plbk.yml
+    - site.yml

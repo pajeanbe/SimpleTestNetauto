@@ -14,7 +14,7 @@
 
 - name: debug msg
   debug:
-    msg: "{{ hc_results.stdout | join('\n') }}"
+    msg: "{{ hc_results.stdout_lines }}"
 
 
 - name: Ensure log directory exists on the Ansible controller
@@ -26,6 +26,7 @@
 
 - name: Save formatted health check output to a local file
   ansible.builtin.copy:
-    content: "{{ hc_results.stdout }}"
+    content: "{{ hc_results.stdout_lines | join('\n') }}"
     dest: "{{ playbook_dir }}/../tmp/logs/{{ inventory_hostname }}_health_check_{{ log_timestamp }}.log"
   delegate_to: localhost
+

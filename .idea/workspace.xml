@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="252aaf60-0f8a-45fd-9bda-eda01148a19c" name="Changes" comment="test">
+      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/controller.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/.env" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/.idea/SimpleWeather.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/.idea/aws.xml" afterDir="false" />
@@ -26,6 +27,8 @@
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/utils.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/we" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/weatherquery.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Cisco/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Cisco/tasks/main.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +124,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1755832147875</updated>
-      <workItem from="1755832149282" duration="24632000" />
+      <workItem from="1755832149282" duration="29827000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -267,7 +270,23 @@
       <option name="project" value="LOCAL" />
       <updated>1755890406395</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="test">
+      <option name="closed" value="true" />
+      <created>1755890806630</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1755890806630</updated>
+    </task>
+    <task id="LOCAL-00020" summary="test">
+      <option name="closed" value="true" />
+      <created>1755890871165</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1755890871165</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
