@@ -1,5 +1,5 @@
 ---
-- name: Configure VLAN on Cisco Switches
+- name: Test connection
   hosts: all
   gather_facts: no
   tasks:

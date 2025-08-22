@@ -1,0 +1,2 @@
+#in the option1 we will send the backup configuration directly to the FTP server
+#option, we will store to the controller and then send to the FTP server

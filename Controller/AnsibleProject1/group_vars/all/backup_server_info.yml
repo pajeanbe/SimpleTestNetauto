@@ -1,0 +1,13 @@
+# Variable to store backup server information. it will be from the remote_nodes to the sFTP
+#not from the COntroller to the sFTP. we can use that option also
+backup_servers:
+  - hostname: server1
+    username: Controller
+    password: FtpController123@
+    port: 22
+    isActive: true
+  - hostname: server2
+    username: Controller
+    password: FtpController123@
+    port: 22
+    isActive: false

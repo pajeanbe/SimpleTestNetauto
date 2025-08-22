@@ -1,0 +1,3 @@
+---
+# Default variables for the common role
+motd_contact_email: "support@example.com"

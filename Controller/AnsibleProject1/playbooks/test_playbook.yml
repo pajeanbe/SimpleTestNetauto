@@ -1,0 +1,18 @@
+#Test playbook
+---
+- name: Backup
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: test Commands
+      ios_command:
+        commands:
+          - show ip int br
+          - show arp
+        when: ansible_network_os == 'ios'
+        register: register
+
+    - name: print register variable
+      debug:
+        msg: register
+

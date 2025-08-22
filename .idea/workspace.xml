@@ -5,6 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="252aaf60-0f8a-45fd-9bda-eda01148a19c" name="Changes" comment="test">
+      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/group_vars/all/backup_server_info.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/backup_node_opt1.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/test_playbook.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Cisco/defaults/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Cisco/handlers/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Cisco/meta/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Cisco/tasks/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Cisco/templates/motd.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/tmp/logs/error_logs.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/.env" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/.idea/SimpleWeather.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/.idea/aws.xml" afterDir="false" />
@@ -26,12 +35,10 @@
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/utils.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/we" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/weatherquery.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SimpleTestNetauto.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SimpleTestNetauto.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/group_vars/Cisco/credential.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/group_vars/Cisco/credential.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/group_vars/all/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/group_vars/all/mainexample.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/inventory/myhosts.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/inventory/myhosts.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/test_connection_plbk.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/test_connection_plbk.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +78,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/jeanb/PycharmProjects/SimpleTestNetauto/Controller/AnsibleProject1/roles/Cisco",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -80,6 +88,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jeanb\PycharmProjects\SimpleTestNetauto\Controller\AnsibleProject1\roles\Cisco" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -95,7 +108,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1755832147875</updated>
-      <workItem from="1755832149282" duration="1190000" />
+      <workItem from="1755832149282" duration="3739000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -113,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755832385403</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="test">
+      <option name="closed" value="true" />
+      <created>1755833376654</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1755833376654</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
