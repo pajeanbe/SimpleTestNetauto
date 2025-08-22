@@ -1,0 +1,4 @@
+---
+# Variables specific to the webservers group
+http_port: 80
+service_name: "nginx"

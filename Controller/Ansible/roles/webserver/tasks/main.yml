@@ -1,0 +1,17 @@
+---
+- name: Install Nginx
+  ansible.builtin.package:
+    name: "{{ service_name }}"
+    state: present
+
+- name: Deploy Nginx configuration
+  ansible.builtin.template:
+    src: nginx.conf.j2
+    dest: "/etc/nginx/nginx.conf"
+  notify: Restart nginx
+
+- name: Ensure Nginx is started and enabled
+  ansible.builtin.service:
+    name: "{{ service_name }}"
+    state: started
+    enabled: true

@@ -1,0 +1,6 @@
+---
+galaxy_info:
+  author: "Your Name"
+  description: "A common role for base system configuration."
+  license: "MIT"
+  min_ansible_version: "2.9"

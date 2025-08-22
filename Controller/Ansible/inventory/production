@@ -1,0 +1,7 @@
+# Production Inventory
+
+[webservers]
+webserver1.example.com
+
+[dbservers]
+db1.example.com

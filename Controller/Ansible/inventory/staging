@@ -1,0 +1,7 @@
+# Staging Inventory
+
+[webservers]
+staging-web.example.com ansible_host=192.168.1.10
+
+[dbservers]
+staging-db.example.com ansible_host=192.168.1.20

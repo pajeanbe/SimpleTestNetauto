@@ -1,0 +1,16 @@
+# This file is managed by Ansible
+
+user www-data;
+worker_processes {{ nginx_worker_processes }};
+pid /run/nginx.pid;
+
+events {
+    worker_connections 768;
+}
+
+http {
+    server {
+        listen {{ http_port }};
+        root /var/www/html;
+    }
+}

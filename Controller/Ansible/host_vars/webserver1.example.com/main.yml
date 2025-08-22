@@ -1,0 +1,4 @@
+---
+# Specific variables for webserver1.example.com
+# These variables are organized into their own file.
+server_owner: "web-team-alpha"

@@ -1,0 +1,15 @@
+---
+- name: Ensure standard packages are installed
+  ansible.builtin.package:
+    name:
+      - vim
+      - curl
+    state: present
+
+- name: Set a custom message of the day (MOTD)
+  ansible.builtin.template:
+    src: motd.j2
+    dest: /etc/motd
+    owner: root
+    group: root
+    mode: '0644'

@@ -1,0 +1,8 @@
+# Ansible vault password file
+.vault_pass
+
+# Local settings
+*.retry
+
+# Python virtual environment
+venv/

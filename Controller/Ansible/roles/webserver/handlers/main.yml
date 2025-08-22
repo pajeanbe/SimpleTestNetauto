@@ -1,0 +1,6 @@
+---
+# Handlers for the webserver role
+- name: Restart nginx
+  ansible.builtin.service:
+    name: "{{ service_name }}"
+    state: restarted

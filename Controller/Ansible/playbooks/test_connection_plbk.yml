@@ -1,0 +1,9 @@
+---
+- name: Configure VLAN on Cisco Switches
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: test
+      debug:
+        msg: "{{ansible_host}} is connected"
+
