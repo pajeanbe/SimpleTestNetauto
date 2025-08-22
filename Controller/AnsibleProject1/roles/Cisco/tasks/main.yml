@@ -4,12 +4,8 @@
     commands: "{{ lookup('file', role_path + '/scripts/Cisco_Equipement_HC.txt').splitlines() | select('match', '^[^!].*') }}"
   register: hc_results
 
-- name: Display health check output
-  ansible.builtin.debug:
-    msg:
-      - "COMMAND: {{ item.invocation.module_args.commands[0] }}"
-      - "OUTPUT:"
-      - "{{ item.stdout_lines | join('\\n') }}"
-  loop: "{{ hc_results.results }}"
-  loop_control:
-    label: "{{ item.invocation.module_args.commands[0] }}"
+- name: Save script output to a local file
+  ansible.builtin.copy:
+    content: "{{ script_output.stdout }}"
+    dest: {{ role_path }}/../tmp/logs/{{ inventory_hostname }}_health_check_{{ date.utctime("%Y%m%d_%H%M%S") }}.log
+  delegate_to: localhost
