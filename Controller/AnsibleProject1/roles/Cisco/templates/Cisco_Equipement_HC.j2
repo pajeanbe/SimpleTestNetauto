@@ -1,0 +1,35 @@
+!# =================================================
+!# Common Commands (for all Cisco IOS devices)
+!# =================================================
+show version
+show inventory
+show clock
+show logging
+show ip interface brief
+show interfaces description
+show interfaces counters errors
+show processes cpu sorted
+show memory summary
+show ip arp
+show cdp neighbors detail
+show lldp neighbors detail
+show running-config | include hostname
+
+!# =================================================
+!# Router-Specific Commands
+!# =================================================
+{% if device_type == 'router' %}
+show ip route summary
+show ip route
+{% endif %}
+
+!# =================================================
+!# Switch-Specific Commands
+!# =================================================
+{% elif device_type == 'switch' %}
+show vlan brief
+show spanning-tree summary
+show mac address-table count
+show interfaces status
+show power inline
+{% endif %}

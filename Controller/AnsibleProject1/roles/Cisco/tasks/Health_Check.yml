@@ -1,7 +1,0 @@
----
-- name: run Cisco HC script
-  ios_command:
-    commands:
-      - {{ item }}
-    loop: ""{{ lookup('file', './roles/Cisco/scripts/Cisco_Equipement_HC.txt').splitlines() }}"
-  when: ansible_network_os == 'ios'

@@ -1,11 +1,31 @@
 ---
+- name: Set timestamp for log files
+  ansible.builtin.set_fact:
+    log_timestamp: "{{ lookup('pipe', 'date +%Y%m%d_%H%M%S') }}"
+  run_once: true
+  delegate_to: localhost
+
 - name: Run health check commands from script
   cisco.ios.ios_command:
-    commands: "{{ lookup('file', role_path + '/scripts/Cisco_Equipement_HC.txt').splitlines() | select('match', '^[^!].*') }}"
+    commands: "{{ lookup('template', 'Cisco_Equipement_HC.j2').splitlines() | select('match', '^[^!].*') }}"
   register: hc_results
 
-- name: Save script output to a local file
+- name: Ensure log directory exists on the Ansible controller
+  ansible.builtin.file:
+    path: "{{ playbook_dir }}/tmp/logs"
+    state: directory
+  delegate_to: localhost
+  run_once: true
+
+- name: Save formatted health check output to a local file
   ansible.builtin.copy:
-    content: "{{ hc_results }}"
-    dest: "{{ role_path }}/../tmp/logs/{{ inventory_hostname }}_health_check_{{ date.utctime('%Y%m%d_%H%M%S') }}.log"
+    content: |
+      {% for item in hc_results.results -%}
+      #################################################################
+      ### COMMAND: {{ item.item }}
+      #################################################################
+      {{ item.stdout | default('No output') }}
+
+      {% endfor %}
+    dest: "{{ playbook_dir }}/tmp/logs/{{ inventory_hostname }}_health_check_{{ log_timestamp }}.log"
   delegate_to: localhost
