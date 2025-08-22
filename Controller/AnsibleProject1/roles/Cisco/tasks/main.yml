@@ -12,9 +12,15 @@
     commands: "{{ lookup('template', 'Cisco_Equipement_HC.j2').splitlines() | select('match', '^[^!].*') }}"
   register: hc_results
 
+- name: debug msg
+  debug:
+    msg: "{{ hc_results.stdout }}"
+  run_once: true
+
+
 - name: Ensure log directory exists on the Ansible controller
   ansible.builtin.file:
-    path: "{{ playbook_dir }}/tmp/logs"
+    path: "{{ playbook_dir }}/../tmp/logs"
     state: directory
   delegate_to: localhost
   run_once: true
@@ -22,5 +28,5 @@
 - name: Save formatted health check output to a local file
   ansible.builtin.copy:
     content: "{{ hc_results.stdout }}"
-    dest: "{{ playbook_dir }}/tmp/logs/{{ inventory_hostname }}_health_check_{{ log_timestamp }}.log"
+    dest: "{{ playbook_dir }}/../tmp/logs/{{ inventory_hostname }}_health_check_{{ log_timestamp }}.log"
   delegate_to: localhost
