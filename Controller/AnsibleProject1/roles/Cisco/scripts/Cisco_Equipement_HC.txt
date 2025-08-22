@@ -6,7 +6,6 @@ show logging
 
 !# Interface Status
 show ip interface brief
-show interfaces status
 show interfaces description
 show interfaces counters errors
 show int
