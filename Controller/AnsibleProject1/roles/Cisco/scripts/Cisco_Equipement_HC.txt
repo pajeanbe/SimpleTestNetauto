@@ -9,6 +9,7 @@ show ip interface brief
 show interfaces status
 show interfaces description
 show interfaces counters errors
+show int
 
 !# CPU & Memory
 show processes cpu sorted
@@ -22,4 +23,3 @@ show lldp neighbors detail
 
 !# Configuration & Filesystem
 show running-config | include hostname
-show flash:
