@@ -14,7 +14,7 @@
 
 - name: debug msg
   debug:
-    msg: "{{ hc_results.stdout.splitlines() | join('\n') }}"
+    msg: "{{ hc_results.stdout | join('\n') }}"
 
 
 - name: Ensure log directory exists on the Ansible controller
