@@ -1,15 +1,15 @@
 ---
-- name: Ensure standard packages are installed
-  ansible.builtin.package:
-    name:
-      - vim
-      - curl
-    state: present
+- name: Run health check commands from script
+  cisco.ios.ios_command:
+    commands: "{{ lookup('file', role_path + '/scripts/Cisco_Equipement_HC.txt').splitlines() | select('match', '^[^!].*') }}"
+  register: hc_results
 
-- name: Set a custom message of the day (MOTD)
-  ansible.builtin.template:
-    src: motd.j2
-    dest: /etc/motd
-    owner: root
-    group: root
-    mode: '0644'
+- name: Display health check output
+  ansible.builtin.debug:
+    msg:
+      - "COMMAND: {{ item.invocation.module_args.commands[0] }}"
+      - "OUTPUT:"
+      - "{{ item.stdout_lines | join('\\n') }}"
+  loop: "{{ hc_results.results }}"
+  loop_control:
+    label: "{{ item.invocation.module_args.commands[0] }}"

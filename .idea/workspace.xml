@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="252aaf60-0f8a-45fd-9bda-eda01148a19c" name="Changes" comment="test">
-      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/common/tasks/test_connectivity.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/inventory/group_vars/Cisco/credential.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/site.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Cisco/scripts/Cisco_Equipement_HC.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Cisco/tasks/Health_Check.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/.env" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/.idea/SimpleWeather.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/.idea/aws.xml" afterDir="false" />
@@ -27,7 +30,17 @@
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/utils.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/we" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/weatherquery.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/ansible.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/ansible.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/group_vars/Cisco/credential.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/group_vars/all/backup_server_info.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/inventory/group_vars/all/backup_server_info.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/group_vars/all/mainexample.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/inventory/group_vars/all/mainexample.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/group_vars/webservers/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/inventory/group_vars/webservers/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/host_vars/webserver1.example.com/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/inventory/host_vars/webserver1.example.com/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/host_vars/webserver1.example.com/secrets.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/inventory/host_vars/webserver1.example.com/secrets.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/inventory/myhosts.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/inventory/myhosts.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/test_playbook.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/test_playbook.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Cisco/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Cisco/tasks/main.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +94,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jeanb\PycharmProjects\SimpleTestNetauto\Controller\AnsibleProject1\roles\Cisco" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jeanb\PycharmProjects\SimpleTestNetauto\Controller\AnsibleProject1\inventory" />
+    </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -97,7 +113,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1755832147875</updated>
-      <workItem from="1755832149282" duration="4432000" />
+      <workItem from="1755832149282" duration="15943000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -131,7 +147,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755835924198</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="test">
+      <option name="closed" value="true" />
+      <created>1755836780722</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1755836780722</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

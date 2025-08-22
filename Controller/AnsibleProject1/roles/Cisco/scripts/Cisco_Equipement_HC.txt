@@ -1,0 +1,25 @@
+!# General System Information
+show version
+show inventory
+show clock
+show logging
+
+!# Interface Status
+show ip interface brief
+show interfaces status
+show interfaces description
+show interfaces counters errors
+
+!# CPU & Memory
+show processes cpu sorted
+show memory summary
+
+!# Routing & Connectivity
+show ip route
+show ip arp
+show cdp neighbors detail
+show lldp neighbors detail
+
+!# Configuration & Filesystem
+show running-config | include hostname
+show flash:

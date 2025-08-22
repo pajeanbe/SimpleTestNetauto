@@ -3,19 +3,21 @@
 - name: Backup
   hosts: all
   gather_facts: no
+  roles:
+    - common
 
   tasks:
     - name: test connection
-      include_tasks: "{{ ansible_role_path }}/common/tasks/test_connectivity.yml"
+      include_tasks: "roles/common/tasks/test_connectivity.yml"
     - name: test Commands
       ios_command:
         commands:
           - show ip int br
           - show arp
         when: ansible_network_os == 'ios'
-        register: register
+        register: output
 
     - name: print register variable
       debug:
-        msg: register
+        msg: output
 

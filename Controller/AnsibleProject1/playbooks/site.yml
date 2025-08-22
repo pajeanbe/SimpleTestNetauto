@@ -1,0 +1,5 @@
+- name: Main Site Playbook
+  gather_facts: no
+  hosts: all
+  roles:
+    - role: Cisco # By default, Ansible executes roles/Cisco/tasks/main.yml
