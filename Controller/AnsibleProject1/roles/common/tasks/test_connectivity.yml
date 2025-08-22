@@ -1,0 +1,5 @@
+
+---
+- name: test
+  debug:
+    msg: "{{ansible_host}} is connected"

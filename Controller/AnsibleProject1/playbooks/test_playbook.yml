@@ -3,7 +3,10 @@
 - name: Backup
   hosts: all
   gather_facts: no
+
   tasks:
+    - name: test connection
+      include_tasks: "{{ ansible_role_path }}/common/tasks/test_connectivity.yml"
     - name: test Commands
       ios_command:
         commands:
