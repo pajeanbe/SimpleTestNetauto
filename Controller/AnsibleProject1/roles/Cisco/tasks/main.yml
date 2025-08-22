@@ -7,5 +7,5 @@
 - name: Save script output to a local file
   ansible.builtin.copy:
     content: "{{ script_output.stdout }}"
-    dest: {{ role_path }}/../tmp/logs/{{ inventory_hostname }}_health_check_{{ date.utctime("%Y%m%d_%H%M%S") }}.log
+    dest: "{{ role_path }}/../tmp/logs/{{ inventory_hostname }}_health_check_{{ date.utctime('%Y%m%d_%H%M%S') }}.log"
   delegate_to: localhost
