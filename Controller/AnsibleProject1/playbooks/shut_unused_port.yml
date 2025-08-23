@@ -16,7 +16,7 @@
 
     - name: Extract unused interfaces using custom filter
       set_fact:
-        unused_interfaces: "{{ interface_output.stdout_lines[0] | get_unused_interfaces }}"
+        unused_interfaces: "{{ interface_output.stdout_lines[0] | find_unused_interfaces_on_cisco_nodes }}"
 
     - name: debug
       debug:
