@@ -1,1 +1,23 @@
-#
+- name: set logtime stamp
+  ansible.builtin.set_fact:
+    log_timestamp: "{{ lookup('pipe', 'date +%Y%m%d_%H%M%S') }}"
+  delegate_to: localhost
+  run_once: true
+
+- name: Run Linux health check commands from script
+  linux.command: "{{ lookup('template', 'Linux_HC.j2').splitlines() | select('match', '^[^!].*') }}"
+  register: hc_results
+
+- name: Ensure log directory exists on the Ansible controller
+  ansible.builtin.file:
+    path: "{{ playbook_dir }}/../tmp/logs"
+    state: directory
+  delegate_to: localhost
+  run_once: true
+
+- name: Save formatted health check output to a local file
+  ansible.builtin.copy:
+    content: "{{ hc_results.stdout_lines | join('\n') }}"
+    dest: "{{ playbook_dir }}/../tmp/logs/{{ inventory_hostname }}_health_check_{{ log_timestamp }}.
+    log"
+  delegate_to: localhost

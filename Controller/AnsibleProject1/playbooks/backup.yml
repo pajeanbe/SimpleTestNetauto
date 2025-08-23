@@ -1,8 +1,9 @@
-- name: backup Nodes
+- name: backup Nodes and HC of the nodes
   gather_facts: no
   hosts: all
   roles:
-    - Cisco
-    - Linux
-  tasks:
-    - import_tasks: cisco_ios_backup.yml
+    - Cisco #will run main.yml in the Cisco role task
+#    - Linux
+
+#  tasks:
+#    - name: other task

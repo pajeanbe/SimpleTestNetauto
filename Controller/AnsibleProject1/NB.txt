@@ -1,0 +1,9 @@
+
+
+ciansible-playbook -i /home/cisco/Project/SimpleTestNetauto/Controller/AnsibleProject1/inventory/myhosts.ini /home/cisco/Project/SimpleTestNetauto/Controller/AnsibleProject1/playbooks/site.yml
+ERROR! Error when evaluating variable in import path: {{ role_path }}/Cisco/tasks/cisco_ios_backup.yml.
+
+When using static imports, ensure that any variables used in their names are defined in vars/vars_files
+or extra-vars passed in from the command line. Static imports cannot use variables from facts or inventory
+sources like group or host vars.
+cisco@inserthostname-here:~/Project/SimpleTestNetauto/Controller/AnsibleProject1$
