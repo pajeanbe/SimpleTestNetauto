@@ -9,8 +9,8 @@
 
     - name: Save config to local file
       ansible.builtin.copy:
-        content: "{{ config_output.stdout[0] }}"
+        content: "{{ output.stdout_lines | join('\n') }}"
         dest: "{{ playbook_dir }}/../tmp/backup/{{ inventory_hostname }}_{{ ansible_date_time.date }}.cfg"
-        delegate_to: localhost
+      delegate_to: localhost
 
 #- name: Backup Linux nodes
