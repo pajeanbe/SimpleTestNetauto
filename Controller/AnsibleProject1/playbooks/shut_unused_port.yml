@@ -11,12 +11,12 @@
       register: interface_output
     - name: debug
       debug:
-        msg: "{{ interface_output.stdout[0] }}"
+        msg: "{{ interface_output.stdout_lines[0] }}"
 
 
     - name: Extract unused interfaces using custom filter
       set_fact:
-        unused_interfaces: "{{ interface_output.stdout[0] | get_unused_interfaces }}"
+        unused_interfaces: "{{ interface_output.stdout_lines[0] | get_unused_interfaces }}"
 
     - name: debug
       debug:
