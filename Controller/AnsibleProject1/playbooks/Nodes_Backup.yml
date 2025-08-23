@@ -10,12 +10,12 @@
 
     - name: debug
       debug:
-       msg: "{{ output }}"
+       msg: "{{ output.stdout_lines }}"
 
     - name: Save config to local file
       ansible.builtin.copy:
         content: "{{ output.stdout_lines | join('\n') }}"
-        dest: "{{ playbook_dir }}/../tmp/backup/{{ inventory_hostname }}_{{ ansible_date_time.date }}.cfg"
+        dest: "{{ playbook_dir }}/../tmp/backup/{{ inventory_hostname }}_{{ ansible.builtin.now().strftime('%Y%m%d_%H%M%S') }}.cfg"
       delegate_to: localhost
 
 #- name: Backup Linux nodes
