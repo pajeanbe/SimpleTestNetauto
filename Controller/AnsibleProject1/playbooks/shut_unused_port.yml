@@ -1,4 +1,4 @@
-- name: Shutdown interfaces with no traffic
+- name: Shutdown interfaces with no traffic using filter plugin
   hosts: SW1
   gather_facts: no
   connection: network_cli
@@ -9,19 +9,10 @@
         commands:
           - show interfaces
       register: interface_output
-    - name: debug
-      debug:
-        msg: "{{ interface_output.stdout }}"
 
-    - name: Parse interfaces with zero traffic
+    - name: Extract unused interfaces using custom filter
       set_fact:
-        unused_interfaces: >-
-          {{
-            interface_output.stdout[0].split('\n\n') | selectattr('search', 'search', 'GigabitEthernet') |
-            selectattr('search', 'search', 'packets input 0,') |
-            selectattr('search', 'search', 'packets output 0,') |
-            map('regex_search', 'interface (\S+)', '\\1') | list
-          }}
+        unused_interfaces: "{{ interface_output.stdout[0] | get_unused_interfaces }}"
 
     - name: Shutdown unused interfaces
       cisco.ios.ios_config:
