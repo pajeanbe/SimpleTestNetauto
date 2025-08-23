@@ -9,6 +9,10 @@
         commands:
           - show interfaces
       register: interface_output
+    - name: debug
+      debug:
+        msg: "{{ interface_output.stdout[0] }}"
+
 
     - name: Extract unused interfaces using custom filter
       set_fact:
