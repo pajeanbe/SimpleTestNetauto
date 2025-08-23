@@ -26,12 +26,18 @@
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/utils.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/we" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/weatherquery.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/shut_unused_port.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/shut_unused_port.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -148,7 +154,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1755832147875</updated>
-      <workItem from="1755832149282" duration="51046000" />
+      <workItem from="1755832149282" duration="51351000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -510,7 +516,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755968952905</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="test">
+      <option name="closed" value="true" />
+      <created>1755969468696</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1755969468696</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
