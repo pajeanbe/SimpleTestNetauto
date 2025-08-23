@@ -2,6 +2,12 @@
   hosts: all
   gather_facts: no
   tasks:
+    - name: log time stamp
+      ansible.builtin.set_fact:
+        log_timestamp: "{{ lookup('pipe', 'date +%Y%m%d_%H%M%S') }}"
+      delegate_to: localhost
+      run_once: true
+
     - name: backup Cisco node
       ios_command:
         commands: show run
@@ -14,8 +20,8 @@
 
     - name: Save config to local file
       ansible.builtin.copy:
-        content: "{{ output.stdout_lines | join('\n') }}"
-        dest: "{{ playbook_dir }}/../tmp/backup/{{ inventory_hostname }}_{{ ansible.builtin.now().strftime('%Y%m%d_%H%M%S') }}.cfg"
+        content: "{{ output.stdout_lines }}"
+        dest: "{{ playbook_dir }}/../tmp/backup/{{ inventory_hostname }}_{{ log_timestamp }}.cfg"
       delegate_to: localhost
 
 #- name: Backup Linux nodes

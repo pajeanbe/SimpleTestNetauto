@@ -2,6 +2,13 @@
   hosts: all
   gather_facts: no
   tasks:
+    - name: log timestamp
+      ansible.builtin.set_fact:
+        log_timestamp: "{{ ansible.builtin.now().strftime('%Y%m%d_%H%M%S') }}"
+      delegate_to: localhost
+      run_once: true
+
+
 
     - name: Run health check commands from script
       cisco.ios.ios_command:
@@ -22,5 +29,5 @@
     - name: Save formatted health check output to a local file
       ansible.builtin.copy:
         content: "{{ hc_results.stdout_lines }}"
-        dest: "{{ playbook_dir }}/../tmp/logs/{{ inventory_hostname }}_health_check_{{ ansible.builtin.now().strftime('%Y%m%d_%H%M%S') }}.log"
+        dest: "{{ playbook_dir }}/../tmp/logs/{{ inventory_hostname }}_health_check_{{ log_timestamp }}.log"
         delegate_to: localhost
