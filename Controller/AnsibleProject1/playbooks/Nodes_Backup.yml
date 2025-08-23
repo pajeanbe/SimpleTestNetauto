@@ -1,11 +1,16 @@
-- name: backup Cisco node
-  hosts: Cisco
+- name: Backup Nodes
+  hosts: all
   gather_facts: no
   tasks:
     - name: backup Cisco node
       ios_command:
         commands: show run
       register: output
+      when: ansible_network_os == 'ios'
+
+    - name: debug
+      debug:
+       msg: "{{ output }}"
 
     - name: Save config to local file
       ansible.builtin.copy:
