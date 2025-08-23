@@ -7,7 +7,7 @@
     - name: Get interface statistics
       cisco.ios.ios_command:
         commands:
-          - show interfaces
+          - show interfaces stats
       register: interface_output
     - name: debug
       debug:

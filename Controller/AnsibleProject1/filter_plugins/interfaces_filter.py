@@ -1,8 +1,14 @@
 def get_unused_interfaces(interface_data):
     """
-    Parses 'show interfaces' output and returns a list of interfaces
+    Parses 'show interfaces', with stdout_lines ,output and returns a list of interfaces
     with 0 input and 0 output packets.
     """
+ #   un_used=[]
+   # for line in interface_data:
+
+
+
+
     unused = []
     for block in interface_data.split('\n\n'):
         lines = block.strip().splitlines()
