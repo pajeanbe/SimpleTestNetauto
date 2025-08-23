@@ -12,7 +12,9 @@
     - name: Extract interface names
       set_fact:
         interface_names: "{{ interfaces.stdout_lines[0] | map('split') | map('first') | list }}"
-
+    - name: show
+      debug:
+        msg: "{{ interfaces.stdout_lines }}"
     - name: Show interface names
       debug:
         msg: "{{ interface_names }}"
