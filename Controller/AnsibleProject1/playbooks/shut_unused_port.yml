@@ -12,4 +12,12 @@
 
     - name: LIST interfaces
       debug:
-        msg: "Working interfaces:{{ interfaces.stdout_lines }}"
+        msg: >-
+          {{ 
+          
+          
+          {% set interface_names = interfaces.stdout_lines | map('split') | map('first') | list %}
+          
+          {{ interface_names }} 
+          
+          }}

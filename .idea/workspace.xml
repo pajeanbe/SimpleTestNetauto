@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="252aaf60-0f8a-45fd-9bda-eda01148a19c" name="Changes" comment="test">
-      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/inventory/group_vars/Cisco_Router/features.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/inventory/group_vars/all/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/demo_playbook.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/restore_ios_nodes.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/shut_unused_port.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/Python/testo.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/.env" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/.idea/SimpleWeather.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/.idea/aws.xml" afterDir="false" />
@@ -31,14 +27,10 @@
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/utils.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/we" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/weatherquery.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SimpleTestNetauto.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SimpleTestNetauto.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/inventory/group_vars/all/backup_server_info.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/inventory/group_vars/all/mainexample.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/backup.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/backup_and_HC.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/site.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/site.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/test_connection_plbk.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/test_connection_plbk.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Cisco/tasks/cisco_hc.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Cisco/tasks/cisco_ios_backup.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/shut_unused_port.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/shut_unused_port.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Python/testo" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Python/test0.j2" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +66,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.testo.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
@@ -97,7 +90,30 @@
       <recent name="C:\Users\jeanb\PycharmProjects\SimpleTestNetauto\Controller\AnsibleProject1\inventory" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.testo">
+    <configuration name="testo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SimpleTestNetauto" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Controller/Python" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Controller/Python/testo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests in SimpleTestNetauto" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="SimpleTestNetauto" />
       <option name="ENV_FILES" value="" />
@@ -116,6 +132,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.testo" />
         <item itemvalue="Python tests.Python tests in SimpleTestNetauto" />
       </list>
     </recent_temporary>
@@ -135,7 +152,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1755832147875</updated>
-      <workItem from="1755832149282" duration="46820000" />
+      <workItem from="1755832149282" duration="48424000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -401,7 +418,31 @@
       <option name="project" value="LOCAL" />
       <updated>1755916974437</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="test">
+      <option name="closed" value="true" />
+      <created>1755964927759</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1755964927760</updated>
+    </task>
+    <task id="LOCAL-00035" summary="test">
+      <option name="closed" value="true" />
+      <created>1755965088999</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1755965088999</updated>
+    </task>
+    <task id="LOCAL-00036" summary="test">
+      <option name="closed" value="true" />
+      <created>1755965236380</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1755965236380</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,5 +451,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
     <option name="LAST_COMMIT_MESSAGE" value="test" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SimpleTestNetauto$testo.coverage" NAME="testo Coverage Results" MODIFIED="1755966048875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Controller/Python" />
   </component>
 </project>
