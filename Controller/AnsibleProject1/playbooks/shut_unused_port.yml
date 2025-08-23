@@ -10,7 +10,8 @@
           - show interfaces
       register: interface_output
     - name: debug
-      msg: "{{ interface_output.stdout }}"
+      debug:
+        msg: "{{ interface_output.stdout }}"
 
     - name: Parse interfaces with zero traffic
       set_fact:
