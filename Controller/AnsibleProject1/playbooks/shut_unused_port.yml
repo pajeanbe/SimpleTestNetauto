@@ -1,12 +1,15 @@
 - name: Secure switch ports with Ansible
   hosts: SW1
   gather_facts: no
+
   tasks:
     - name: list all working interfaces
       cisco.ios.ios_command:
         commands:
           - show ip interface brief | include up
       register: interfaces
-    - name: Log Port Security Update
+
+
+    - name: LIST interfaces
       debug:
-        msg: "Port security was updated on interfaces: {{ unsecured_ports }}"
+        msg: "Working interfaces: {{ interfaces }}"
