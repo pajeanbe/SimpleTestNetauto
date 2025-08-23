@@ -26,8 +26,6 @@
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/utils.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/we" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/weatherquery.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/Nodes_Backup.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/Nodes_Backup.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/Nodes_Health_Check.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/Nodes_Health_Check.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +122,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1755832147875</updated>
-      <workItem from="1755832149282" duration="36250000" />
+      <workItem from="1755832149282" duration="36553000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -342,7 +340,23 @@
       <option name="project" value="LOCAL" />
       <updated>1755910603236</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="test">
+      <option name="closed" value="true" />
+      <created>1755910978257</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1755910978257</updated>
+    </task>
+    <task id="LOCAL-00029" summary="test">
+      <option name="closed" value="true" />
+      <created>1755911278959</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1755911278959</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
