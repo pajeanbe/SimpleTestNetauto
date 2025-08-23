@@ -1,0 +1,11 @@
+- name: restore node playbook
+  gather_facts: no
+  hosts: all #prefer to restore the specific node needing
+  tasks:
+    - name: restore ios configuration #will restore last backup
+      ios_config:
+        restore: yes
+        restore_options:
+          filename: "{{ inventory_hostname }}_backup_{{ log_timestamp }}.cfg" #prefer to enter manually the file name
+          dir_path: "{{ playbook_dir }}/../tmp/backup"
+      when: ansible_network_os=='ios'

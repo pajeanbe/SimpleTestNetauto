@@ -1,4 +1,0 @@
----
-# Variables that apply to all hosts
-admin_user: "sysadmin"
-ntp_server: "pool.ntp.org"

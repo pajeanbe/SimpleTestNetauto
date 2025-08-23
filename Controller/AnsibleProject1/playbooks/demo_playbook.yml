@@ -1,0 +1,44 @@
+- name: Secure switch ports with Ansible
+  hosts: switches
+  gather_facts: no
+  connection: network_cli
+  vars:
+    ansible_network_os: cisco.ios.ios
+    other_vars:
+      - value1
+      - value2
+    another_var: value
+    ano_var:
+      - id: id
+        name: name
+
+
+  tasks:
+    - name: Check port security status
+      cisco.ios.ios_command:
+        commands:
+          - show port-security
+      register: port_security_output
+
+    - name: Identify unsecured ports
+      set_fact:
+        unsecured_ports: >-
+          {{
+            port_security_output.stdout[0].split('\n') | select("search", "Secure") |
+            reject("search", "Secure-Up") | map("regex_search", "([A-Za-z]+[0-9/]+)") | list
+          }}
+
+    - name: Configure port security on unsecured ports
+      cisco.ios.ios_config:
+        lines:
+          - switchport port-security
+          - switchport port-security maximum 2
+          - switchport port-security violation restrict
+        parents: "interface {{ item }}"
+      loop: "{{ unsecured_ports }}"
+      notify: Log Port Security Update
+
+  handlers:
+    - name: Log Port Security Update
+      debug:
+        msg: "Port security was updated on interfaces: {{ unsecured_ports }}"

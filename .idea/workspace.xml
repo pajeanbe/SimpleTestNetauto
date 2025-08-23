@@ -5,6 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="252aaf60-0f8a-45fd-9bda-eda01148a19c" name="Changes" comment="test">
+      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/inventory/group_vars/Cisco_Router/features.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/inventory/group_vars/all/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/demo_playbook.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/restore_ios_nodes.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/shut_unused_port.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/.env" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/.idea/SimpleWeather.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/.idea/aws.xml" afterDir="false" />
@@ -27,11 +32,13 @@
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/we" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/weatherquery.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/backup.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/backup.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Cisco/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Cisco/tasks/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Linux/tasks/linux_backup.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/NB.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Linux/tasks/linux_hc.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Linux/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Linux/tasks/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/inventory/group_vars/all/backup_server_info.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/inventory/group_vars/all/mainexample.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/backup.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/backup_and_HC.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/site.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/site.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/test_connection_plbk.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/test_connection_plbk.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Cisco/tasks/cisco_hc.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Cisco/tasks/cisco_ios_backup.yml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +135,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1755832147875</updated>
-      <workItem from="1755832149282" duration="41201000" />
+      <workItem from="1755832149282" duration="46820000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -386,7 +393,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755915885349</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="test">
+      <option name="closed" value="true" />
+      <created>1755916974437</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1755916974437</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -5,5 +5,5 @@
   tasks:
     - name: test connection
       debug:
-        msg: "{{ansible_host}} is connected"
+        msg: "{{ inventory_hostname }}-{{ansible_host}} is pinging"
 

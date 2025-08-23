@@ -1,6 +1,7 @@
-# Variable to store backup.yml server information. it will be from the remote_nodes to the sFTP
-#not from the COntroller to the sFTP. we can use that option also
-backup_servers:
+NTP_servers:
+  hostnames_or_ip_addresses: null
+
+backup_to_ftp_servers:
   - hostname: server1
     username: Controller
     password: FtpController123@
@@ -11,3 +12,5 @@ backup_servers:
     password: FtpController123@
     port: 22
     isActive: false
+Rsyslog_server:
+  hostnames_or_ip_addresses: null
