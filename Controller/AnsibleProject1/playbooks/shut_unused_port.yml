@@ -9,15 +9,10 @@
           - show ip interface brief | include up
       register: interfaces
 
+    - name: Extract interface names
+      set_fact:
+        interface_names: "{{ interfaces.stdout_lines[0] | map('split') | map('first') | list }}"
 
-    - name: LIST interfaces
+    - name: Show interface names
       debug:
-        msg: >-
-          
-          {% for data in interfaces.stdout_lines %}
-          {% set interface_names = data | map('split') | map('first') | list %}
-          {% endfor %}         
-          
-          
-          {{ interface_names }} 
-          
+        msg: "{{ interface_names }}"
