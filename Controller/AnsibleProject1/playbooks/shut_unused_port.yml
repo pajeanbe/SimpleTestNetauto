@@ -1,5 +1,5 @@
 - name: Shutdown interfaces with no traffic
-  hosts: switches
+  hosts: SW1
   gather_facts: no
   connection: network_cli
 
