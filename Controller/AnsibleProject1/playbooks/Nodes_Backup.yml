@@ -1,7 +1,7 @@
 - name: backup Cisco node
   hosts: Cisco
   gather_facts: no
-  when: {{ ansible_network_os == 'ios' }} #not really needing
+  when: ansible_network_os == 'ios'  #not really needing
   tasks:
     - name: backup Cisco node
       ios_command:
