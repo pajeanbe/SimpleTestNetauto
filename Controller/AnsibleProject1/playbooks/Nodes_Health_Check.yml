@@ -1,0 +1,31 @@
+- name: nodes Health check
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: get log timestamp
+      ansible.builtin.set_fact:
+        log_timestamp: "{{ lookup('pipe', 'date +%Y%m%d_%H%M%S') }}"
+      delegate_to: localhost
+      run_once: true
+
+    - name: Run health check commands from script
+      cisco.ios.ios_command:
+        commands: "{{ lookup('template', 'Cisco_Equipement_HC.j2').splitlines() | select('match', '^[^!].*') }}"
+        register: hc_results
+        when: ansible_network_os == 'ios'
+
+    - name: HC for Linux system
+      shell:
+        cmd: "{{ lookup('template', 'Linux_HC.j2').splitlines() | select('match', '^[^!].*') }}"
+      register: hc_results
+      when: false
+
+    - name: debug msg
+      debug:
+        msg: "{{ hc_results.stdout_lines }}"
+
+    - name: Save formatted health check output to a local file
+      ansible.builtin.copy:
+        content: "{{ hc_results.stdout_lines | join('\n') }}"
+        dest: "{{ playbook_dir }}/../tmp/logs/{{ inventory_hostname }}_health_check_{{ log_timestamp }}.log"
+        delegate_to: localhost

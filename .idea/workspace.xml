@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="252aaf60-0f8a-45fd-9bda-eda01148a19c" name="Changes" comment="test">
-      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/controller.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/Nodes_Backup.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/Nodes_Health_Check.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Linux/defaults/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Linux/handlers/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Linux/tasks/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Linux/templates/Linux_HC.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Linux/templates/nginx.conf.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Linux/vars/main.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/.env" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/.idea/SimpleWeather.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/.idea/aws.xml" afterDir="false" />
@@ -28,7 +35,9 @@
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/we" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/weatherquery.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Cisco/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Cisco/tasks/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/controller.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/controller.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/test_connection_plbk.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/test_connection_plbk.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/common/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/common/tasks/main.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +77,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/jeanb/PycharmProjects/SimpleTestNetauto/Controller/AnsibleProject1/roles/Cisco",
+    "last_opened_file_path": "C:/Users/jeanb/PycharmProjects/SimpleTestNetauto/Controller/AnsibleProject1/roles/Linux",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -80,6 +89,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jeanb\PycharmProjects\SimpleTestNetauto\Controller\AnsibleProject1\roles\Linux" />
       <recent name="C:\Users\jeanb\PycharmProjects\SimpleTestNetauto\Controller\AnsibleProject1\roles\Cisco" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -124,7 +134,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1755832147875</updated>
-      <workItem from="1755832149282" duration="29827000" />
+      <workItem from="1755832149282" duration="33792000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -286,7 +296,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755890871165</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="test">
+      <option name="closed" value="true" />
+      <created>1755902171759</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1755902171759</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

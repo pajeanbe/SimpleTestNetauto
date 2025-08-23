@@ -3,7 +3,7 @@
   hosts: all
   gather_facts: no
   tasks:
-    - name: test
+    - name: test connection
       debug:
         msg: "{{ansible_host}} is connected"
 
