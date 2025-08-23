@@ -5,6 +5,4 @@
     - Cisco
     - Linux
   tasks:
-    - import_tasks:
-        - cisco_ios_backup.yml
-#        - linux_backup.yml
+    - import_tasks: cisco_ios_backup.yml
