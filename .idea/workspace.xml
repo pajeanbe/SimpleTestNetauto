@@ -5,14 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="252aaf60-0f8a-45fd-9bda-eda01148a19c" name="Changes" comment="test">
-      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/Nodes_Backup.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/Nodes_Health_Check.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Linux/defaults/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Linux/handlers/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Linux/tasks/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Linux/templates/Linux_HC.j2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Linux/templates/nginx.conf.j2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/Linux/vars/main.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/.env" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/.idea/SimpleWeather.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/.idea/aws.xml" afterDir="false" />
@@ -35,9 +27,7 @@
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/we" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SimpleWeather/weatherquery.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/controller.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/controller.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/test_connection_plbk.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/test_connection_plbk.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/common/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/roles/common/tasks/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/Nodes_Backup.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/AnsibleProject1/playbooks/Nodes_Backup.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +124,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1755832147875</updated>
-      <workItem from="1755832149282" duration="33792000" />
+      <workItem from="1755832149282" duration="34506000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -304,7 +294,31 @@
       <option name="project" value="LOCAL" />
       <updated>1755902171759</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="test">
+      <option name="closed" value="true" />
+      <created>1755908318852</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1755908318852</updated>
+    </task>
+    <task id="LOCAL-00023" summary="test">
+      <option name="closed" value="true" />
+      <created>1755908535982</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1755908535982</updated>
+    </task>
+    <task id="LOCAL-00024" summary="test">
+      <option name="closed" value="true" />
+      <created>1755908630633</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1755908630633</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

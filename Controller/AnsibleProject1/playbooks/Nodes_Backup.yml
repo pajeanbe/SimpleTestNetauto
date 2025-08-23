@@ -1,7 +1,6 @@
 - name: backup Cisco node
   hosts: Cisco
   gather_facts: no
-  when: ansible_network_os == 'ios'  #not really needing
   tasks:
     - name: backup Cisco node
       ios_command:
@@ -14,27 +13,4 @@
         dest: "{{ playbook_dir }}/../tmp/backup/{{ inventory_hostname }}_{{ ansible_date_time.date }}.cfg"
         delegate_to: localhost
 
-- name: Backup remote Linux server
-  hosts: linux_servers
-  become: true
-  when: false #remove when line or set it to true  condition in other to have this playbook running
-  tasks:
-
-    - name: Create backup directory
-      file:
-        path: /backup
-        state: directory
-        mode: '0755'
-
-    - name: Archive important directories
-      archive:
-        path: /etc,/var/log,/home
-        dest: /backup/server_backup.tar.gz
-        format: gz
-
-    - name: Fetch backup to control node
-      fetch:
-        src: /backup/server_backup.tar.gz
-        dest: ./backups/
-        flat: yes
-
+#- name: Backup Linux nodes
