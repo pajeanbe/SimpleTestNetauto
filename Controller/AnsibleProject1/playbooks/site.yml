@@ -1,7 +1,2 @@
-- name: Main Site Playbook
-  gather_facts: no
-  hosts: all
-  connection: ansible.netcommon.network_cli
-  roles:
-    - role: Cisco # By default, Ansible executes roles/Cisco/tasks/main.yml.
-      when: ansible_network_os in ['cisco.ios', 'ios']
+- import_playbook: test_connection_plbk.yml
+- import_playbook: backup.yml

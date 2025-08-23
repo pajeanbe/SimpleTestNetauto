@@ -1,0 +1,13 @@
+- name: Set timestamp for backup files
+  ansible.builtin.set_fact:
+    log_timestamp: "{{ lookup('pipe', 'date +%Y%m%d_%H%M%S') }}"
+  delegate_to: localhost
+  run_once: true
+
+- name: Backup running config
+  ios_config:
+    backup: yes
+    backup_options:
+      filename: "{{ inventory_hostname }}_backup_{{ log_timestamp }}.cfg"
+      dir_path: "{{ playbook_dir }}/../tmp/backup}}"
+  when: ansible_network_os=='ios'
